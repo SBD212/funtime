@@ -114,7 +114,7 @@ const RecommendationList = () => {
         {activeIndex
           ? order
             ? recommendations.map((recommendationItem) => (
-                <Card key={recommendationItem.name}>
+                <Card key={recommendationItem._id}>
                   <RecommendationDetail
                     activityImg={recommendationItem.imageUrl}
                     name={recommendationItem.description}
@@ -130,7 +130,7 @@ const RecommendationList = () => {
                 </Card>
               ))
             : recommendationsByDist.map((recommendationItem) => (
-                <Card key={recommendationItem.name}>
+                <Card key={recommendationItem._id}>
                   <RecommendationDetail
                     activityImg={recommendationItem.imageUrl}
                     name={recommendationItem.description}
