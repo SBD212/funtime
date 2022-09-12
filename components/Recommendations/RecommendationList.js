@@ -116,7 +116,7 @@ const RecommendationList = () => {
             ? recommendations.map((recommendationItem) => (
                 <Card>
                   <RecommendationDetail
-                    key={recommendationItem._id}
+                    key={recommendationItem.name}
                     activityImg={recommendationItem.imageUrl}
                     name={recommendationItem.description}
                     organisation={recommendationItem.name}
@@ -133,7 +133,7 @@ const RecommendationList = () => {
             : recommendationsByDist.map((recommendationItem) => (
                 <Card>
                   <RecommendationDetail
-                    key={recommendationItem._id}
+                    key={recommendationItem.name}
                     activityImg={recommendationItem.imageUrl}
                     name={recommendationItem.description}
                     organisation={recommendationItem.name}
