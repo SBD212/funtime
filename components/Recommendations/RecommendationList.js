@@ -25,7 +25,7 @@ const RecommendationList = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch("https://recommender-funtime.herokuapp.com/", {
+    fetch("https://funtimeapi.herokuapp.com/", {
       method: "POST",
       headers: {},
       body: JSON.stringify(choices),
