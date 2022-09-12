@@ -27,9 +27,9 @@ const RecommendationList = () => {
     setIsLoading(true);
     fetch("https://funtimeapi.herokuapp.com/", {
       method: "POST",
-      headers: {},
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(choices),
-      mode:'no-cors'
+      mode: "cors",
     })
       .then((response) => response.json())
       .then((data) => {
