@@ -27,7 +27,7 @@ const RecommendationList = () => {
     setIsLoading(true);
     fetch("https://recommender-funtime.herokuapp.com/", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {},
       body: JSON.stringify(choices),
     })
       .then((response) => response.json())
