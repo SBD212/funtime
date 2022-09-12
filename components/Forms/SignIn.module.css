@@ -1,0 +1,75 @@
+.bg {
+  background-image: url("../../public/images/hiking-backdrop.png");
+  background-size: 85rem;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  min-height: 77vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 2rem;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+}
+
+.text:before,
+.text:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin-bottom: 0.6rem;
+}
+
+.text:before {
+  margin-right: 0.5rem;
+}
+
+.text:after {
+  margin-left: 0.5rem;
+}
+
+.btn_container {
+  display: flex;
+  justify-content: center;
+  column-gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.btn,
+.btn_google {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 0.3rem 2rem;
+  border-radius: 0.25rem;
+}
+
+.btn:hover,
+.btn_google:hover {
+  background-color: rgba(0, 0, 0, 0.133);
+}
+
+.btn_google {
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.icon{
+  height: 1.75rem;
+  margin-right: 0.5rem;
+}

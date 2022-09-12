@@ -1,0 +1,33 @@
+.text {
+  margin-top: 10rem;
+  margin-left: 7rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6rem;
+  row-gap: 0.25rem;
+}
+
+.btn {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: 0.3rem 2rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.25rem;
+  background-color: #27b9d6;
+  box-shadow: 0 10px 30px -10px rgb(0 0 0 / 30%), 0 10px 60px -15px #27b9d6;
+}
+
+.btn:hover {
+  color: white;
+  font-weight: 500;
+  background-color: #1398b3;
+}
+
+.imageContainer {
+  margin: 4rem 5rem 0 0;
+}

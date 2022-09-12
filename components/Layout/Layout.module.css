@@ -1,0 +1,20 @@
+.app_bg {
+  background-image: url("../../public/images/bg2.png");
+  background-size: 98rem;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app_container {
+  background-color: white;
+  box-shadow: 5px 5px 18px #abababa0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 90vh;
+  min-height: 90vh;
+  padding: 0 !important;
+}
