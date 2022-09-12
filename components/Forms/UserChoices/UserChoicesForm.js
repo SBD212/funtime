@@ -20,7 +20,7 @@ const UserChoicesForm = () => {
   return (
     <Fragment>
       <div className={styles.form_title}>
-        <h5> Help FunTime decide what you're looking for! </h5>
+        <h5> Help FunTime decide what you&apos;re looking for! </h5>
       </div>
       <hr className={styles.line} />
 
