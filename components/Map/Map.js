@@ -25,7 +25,10 @@ const Map = (props) => {
       }}
     >
       {props.places.map((place) => (
-        <MarkerF position={{ lat: place.location.lat, lng: place.location.lng }} />
+        <MarkerF
+          key={place.name}
+          position={{ lat: place.location.lat, lng: place.location.lng }}
+        />
       ))}
     </GoogleMap>
   );
