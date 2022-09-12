@@ -29,6 +29,7 @@ const RecommendationList = () => {
       method: "POST",
       headers: {},
       body: JSON.stringify(choices),
+      mode:'no-cors'
     })
       .then((response) => response.json())
       .then((data) => {
