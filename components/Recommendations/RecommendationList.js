@@ -114,9 +114,8 @@ const RecommendationList = () => {
         {activeIndex
           ? order
             ? recommendations.map((recommendationItem) => (
-                <Card>
+                <Card key={recommendationItem.name}>
                   <RecommendationDetail
-                    key={recommendationItem.name}
                     activityImg={recommendationItem.imageUrl}
                     name={recommendationItem.description}
                     organisation={recommendationItem.name}
@@ -131,9 +130,8 @@ const RecommendationList = () => {
                 </Card>
               ))
             : recommendationsByDist.map((recommendationItem) => (
-                <Card>
+                <Card key={recommendationItem.name}>
                   <RecommendationDetail
-                    key={recommendationItem.name}
                     activityImg={recommendationItem.imageUrl}
                     name={recommendationItem.description}
                     organisation={recommendationItem.name}
@@ -149,9 +147,8 @@ const RecommendationList = () => {
               ))
           : order
           ? recommendations.slice(0, 5).map((recommendationItem) => (
-              <Card>
+              <Card key={recommendationItem._id}>
                 <RecommendationDetail
-                  key={recommendationItem.name}
                   activityImg={recommendationItem.imageUrl}
                   name={recommendationItem.description}
                   organisation={recommendationItem.name}
@@ -166,9 +163,8 @@ const RecommendationList = () => {
               </Card>
             ))
           : recommendationsByDist.slice(0, 5).map((recommendationItem) => (
-              <Card>
+              <Card key={recommendationItem._id}>
                 <RecommendationDetail
-                  key={recommendationItem.name}
                   activityImg={recommendationItem.imageUrl}
                   name={recommendationItem.description}
                   organisation={recommendationItem.name}
