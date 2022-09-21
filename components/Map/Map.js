@@ -12,7 +12,6 @@ import { Fragment } from "react";
 
 const Map = (props) => {
   const center = useMemo(() => ({ lat: 51.481583, lng: -3.17909 }), []);
-  const map = useGoogleMap();
 
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
@@ -22,18 +21,17 @@ const Map = (props) => {
     return <div>Loading Google Maps...</div>;
   }
 
+  const map = useGoogleMap();
+
   return (
     <Fragment>
       <button
         onClick={() => {
           map.panTo(center);
-          map.setZoom(13)
+          map.setZoom(13);
         }}
       >
-        <FontAwesomeIcon
-          icon={faLocationArrow}
-          style={{ height: "0.25rem" }}
-        />
+        <FontAwesomeIcon icon={faLocationArrow} style={{ height: "0.25rem" }} />
       </button>
       <GoogleMap
         center={center}
