@@ -4,7 +4,7 @@
   margin-left: 10rem;
 }
 
-.btn_container{
+.btn_container {
   display: flex;
   flex-direction: column;
   row-gap: 0.5rem;
@@ -35,7 +35,7 @@
   align-items: baseline;
 }
 
-.title:hover{
+.title:hover {
   cursor: pointer;
 }
 
@@ -53,10 +53,12 @@
   text-decoration: none;
 }
 
-.btn {
+.btn,
+.sort_btn {
   color: white;
   font-weight: 500;
   text-decoration: none;
+  margin-bottom: 0.5rem;
   border-radius: 1rem;
   padding: 0.3rem 2rem;
   margin-bottom: 0.5rem;
@@ -65,14 +67,13 @@
   box-shadow: 0 10px 30px -10px rgb(0 0 0 / 30%), 0 10px 60px -15px #27b9d6;
 }
 
-.btn:hover {
+.sort_btn {
+  border: none;
+}
+
+.btn:hover, .sort_btn:hover {
   color: white;
   font-weight: 500;
   background-color: #1398b3;
 }
 
-.sort_btn{
-  background-color: #27b9d6;
-  box-shadow: 0 10px 30px -10px rgb(0 0 0 / 30%), 0 10px 60px -15px #27b9d6;
-  margin-bottom: 0.5rem;
-}

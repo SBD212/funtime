@@ -34,7 +34,6 @@ const RecommendationList = () => {
       .then((response) => response.json())
       .then((data) => {
         setRecomendations(data[0]);
-        console.log(data[0]);
         setRecomendationsByDist(data[1]);
         setIsLoading(false);
       })
@@ -106,7 +105,6 @@ const RecommendationList = () => {
       <Col className={styles.col}>
         <DropdownButton
           bsPrefix={styles.sort_btn}
-          //className={styles.sort_btn}
           id="dropdown-basic"
           title="Sort By"
         >
