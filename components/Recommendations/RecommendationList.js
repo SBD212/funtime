@@ -105,8 +105,9 @@ const RecommendationList = () => {
 
       <Col className={styles.col}>
         <DropdownButton
-          className={styles.sort_btn}
-          id="dropdown-basic-button"
+          bsPrefix={styles.sort_btn}
+          //className={styles.sort_btn}
+          id="dropdown-basic"
           title="Sort By"
         >
           <Dropdown.Item onClick={sortByDefault}>Recommended</Dropdown.Item>
