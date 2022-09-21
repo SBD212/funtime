@@ -13,13 +13,9 @@ import { Fragment } from "react";
 const Map = (props) => {
   const center = useMemo(() => ({ lat: 51.481583, lng: -3.17909 }), []);
 
-  const { isLoaded } = useLoadScript({
+  useLoadScript({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
   });
-
-  if (!isLoaded) {
-    return <div>Loading Google Maps...</div>;
-  }
 
   const map = useGoogleMap();
 
