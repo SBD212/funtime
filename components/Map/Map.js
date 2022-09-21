@@ -3,7 +3,6 @@ import {
   GoogleMap,
   useLoadScript,
   MarkerF,
-  useGoogleMap,
 } from "@react-google-maps/api";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
@@ -12,12 +11,15 @@ import { Fragment } from "react";
 
 const Map = (props) => {
   const center = useMemo(() => ({ lat: 51.481583, lng: -3.17909 }), []);
+  const [map, setMap] = useState(null);
 
-  useLoadScript({
+  const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
   });
 
-  const map = useGoogleMap();
+  if (!isLoaded) {
+    return <div>Loading Google Maps...</div>;
+  }
 
   return (
     <Fragment>
@@ -38,7 +40,7 @@ const Map = (props) => {
           streetViewControl: false,
           mapTypeControl: false,
         }}
-        onLoad={(map) => setMap(map)}
+        onLoad={map => setMap(map)}
       >
         {props.places.map((place) => (
           <MarkerF
