@@ -6,7 +6,7 @@ import {
   useGoogleMap,
 } from "@react-google-maps/api";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
+import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Map.module.css";
 import { Fragment } from "react";
 
@@ -31,7 +31,7 @@ const Map = (props) => {
         }}
       >
         <FontAwesomeIcon
-          icon={solid("location-arrow")}
+          icon={faLocationArrow}
           style={{ height: "0.25rem" }}
         />
       </button>
