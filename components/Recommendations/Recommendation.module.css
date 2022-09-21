@@ -72,5 +72,7 @@
 }
 
 .sort_btn{
+  background-color: #27b9d6;
+  box-shadow: 0 10px 30px -10px rgb(0 0 0 / 30%), 0 10px 60px -15px #27b9d6;
   margin-bottom: 0.5rem;
 }
