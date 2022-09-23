@@ -37,7 +37,7 @@ const Step1 = (props) => {
                   name="type"
                   value="Academia"
                 />
-                Academia
+                Academia (e.g. language classes) 
               </label>
               <label>
                 <Field
@@ -46,7 +46,7 @@ const Step1 = (props) => {
                   name="type"
                   value="Arcade"
                 />
-                Arcade
+                Arcade (bowling, laser-tag, arcade games)
               </label>
               <label>
                 <Field
@@ -55,7 +55,7 @@ const Step1 = (props) => {
                   name="type"
                   value="Fantasy and Role Play"
                 />
-                Fantasy and Role Play
+                Fantasy and Role Play (board games, D&D)
               </label>
               <label>
                 <Field
@@ -64,7 +64,7 @@ const Step1 = (props) => {
                   name="type"
                   value="Music And Arts"
                 />
-                Music And Arts
+                Music And Arts (dance school, sewing classes)
               </label>
               <label>
                 <Field
@@ -73,7 +73,7 @@ const Step1 = (props) => {
                   name="type"
                   value="Sports and Outdoors"
                 />
-                Sports And Outdoors
+                Sports And Outdoors (swimming, hockey, football etc)
               </label>
             </div>
             {errors.type ? (

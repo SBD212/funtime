@@ -26,23 +26,46 @@
 
 .space {
   margin: 1.5rem;
+  margin-top: 1rem;
   flex-grow: 2;
 }
 
 .title {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 
-.title:hover {
+.like {
+  display: flex;
+  align-items: center;
+}
+
+.heart,
+.heart_clicked {
+  margin-right: 0.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.heart:hover {
+  fill: #ec0377;
+  color: #ec0377;
+  cursor: pointer;
+}
+
+.heart_clicked {
+  fill: #ec0377;
+  color: #ec0377;
+}
+
+.heart_clicked:hover {
   cursor: pointer;
 }
 
 .rating {
   display: flex;
   align-items: center;
-  margin-left: auto;
 }
 
 .ratingtext {
@@ -71,9 +94,14 @@
   border: none;
 }
 
-.btn:hover, .sort_btn:hover {
+.btn:hover,
+.sort_btn:hover {
   color: white;
   font-weight: 500;
   background-color: #1398b3;
 }
 
+.activity_name:hover,
+.activity_img:hover {
+  cursor: pointer;
+}

@@ -23,6 +23,13 @@ export default NextAuth({
       clientSecret: process.env.INSTAGRAM_CLIENT_SECRET,
     }),
   ],
+  callbacks: {
+    async session({ session, user }) {
+      // Send properties to the client, like an access_token from a provider.
+      session.userId = user.id;
+      return session;
+    },
+  },
   pages: {
     signIn: "/auth/signin",
     signOut: "/",

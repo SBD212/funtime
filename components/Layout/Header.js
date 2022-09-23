@@ -19,7 +19,7 @@ const Header = () => {
           {session ? (
             <div className={styles.greeting}>
               {" "}
-              <div>
+              <div className={styles.pp}>
                 <Image
                   src={session.user.image}
                   alt="user-image"
@@ -35,6 +35,11 @@ const Header = () => {
             <Link href="/">
               <a className={styles.link}>Home</a>
             </Link>
+            {session && (
+              <Link href="/profile">
+                <a className={styles.link}>My Profile</a>
+              </Link>
+            )}
             {session ? (
               <a className={styles.link} onClick={() => signOut()}>
                 Sign out

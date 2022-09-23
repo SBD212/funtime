@@ -17,10 +17,10 @@ const Step5 = (props) => {
       }}
       validationSchema={Yup.object({
         postcode: Yup.string()
-          // .matches(
-          //   `^([A-Z]{1,2}\d[A-Z\d]? ?\d[A-Z]{2}|GIR ?0A{2})$`,
-          //   "The postcode you entered is in an invalid format"
-          // )
+          .matches(
+            /^[A-Z]{1,2}\d[A-Z\d]? ?\d[A-Z]{2}$/,
+            "The postcode you entered is in an invalid format"
+          )
           .required("A postcode is required"),
       })}
       onSubmit={(values, { setSubmitting }) => {

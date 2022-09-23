@@ -13,12 +13,7 @@ const Step4 = (props) => {
         gender: "",
       }}
       validationSchema={Yup.object({
-        gender: Yup.string()
-          // .matches(
-          //   `^([A-Z]{1,2}\d[A-Z\d]? ?\d[A-Z]{2}|GIR ?0A{2})$`,
-          //   "The postcode you entered is in an invalid format"
-          // )
-          .required("Gender is required"),
+        gender: Yup.string().required("Gender is required"),
       })}
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
