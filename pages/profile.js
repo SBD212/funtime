@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import Head from "next/head";
 import SavedRecommendations from "../components/Recommendations/Liked/SavedRecommendations";
 
-const profile = () => {
+const Profile = () => {
   const { data: session } = useSession();
   const { userId } = session;
 
@@ -14,12 +14,12 @@ const profile = () => {
         <link rel="icon" href="/logo.png" />
         <meta name="description" content="Liked activities" />
       </Head>
-      <SavedRecommendations userId= {userId}/>
+      <SavedRecommendations />
     </Fragment>
   );
 };
 
-export default profile;
+export default Profile;
 
 export async function getServerSideProps(context) {
   const session = await getSession({ req: context.req });
